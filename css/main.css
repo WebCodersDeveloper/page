@@ -1,0 +1,552 @@
+@import url(main_body.scss);
+@import url(header.scss);
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Inter:wght@400;500;600;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 1515px;
+  height: 4500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+main .callout {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1B3764;
+}
+main .callout .callout_main {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: url(../img/callout-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+main .callout .callout_main h1 {
+  color: #FFF;
+  font-family: Cardo;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 54px */
+  letter-spacing: -0.9px;
+  position: relative;
+}
+main .callout .callout_main h1::after {
+  content: "";
+  width: 55px;
+  height: 3px;
+  background: #FFCA42;
+  position: absolute;
+  top: 100px;
+  left: 5px;
+}
+main .callout .callout_main p {
+  width: 567px;
+  color: #B4C7E7;
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 34.2px */
+  letter-spacing: -0.19px;
+}
+main .callout .callout_main button {
+  margin-top: -50px;
+  padding: 20px 53px 21px 53px;
+  width: 220px;
+  background: none;
+  border: 1px solid #FFCA42;
+  background: none;
+  color: #fff;
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 34.2px */
+  letter-spacing: -0.19px;
+  transition: ease-in-out 350ms;
+}
+main .callout .callout_main button:hover {
+  background: #FFCA42;
+  cursor: pointer;
+}
+main .learn {
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+main .learn .learn_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 95%;
+  height: 90%;
+}
+main .learn .learn_main h1 {
+  color: #1B3764;
+  font-family: Cardo;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  position: relative;
+}
+main .learn .learn_main h1::after {
+  content: "";
+  width: 55px;
+  height: 3px;
+  background: #FFCA42;
+  position: absolute;
+  top: 100px;
+  left: 175px;
+}
+main .learn .learn_main .learn_main_lists {
+  display: flex;
+  width: 95%;
+  height: 70%;
+}
+main .learn .learn_main .learn_main_lists .learn_list_cards {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main .learn .learn_main .learn_main_lists .learn_list_cards .list_card {
+  display: flex;
+  width: 257px;
+  height: 248px;
+  padding: 41px 33px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  background: #F6F8FC;
+}
+main .learn .learn_main .learn_main_lists .learn_list_cards .list_card b {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFCA42;
+  color: #1B3764;
+  text-align: center;
+  font-family: Cardo;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 50%;
+}
+main .learn .learn_main .learn_main_lists .learn_list_cards .list_card p {
+  width: 224px;
+  color: #1B3764;
+  font-family: Cardo;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: -0.24px;
+}
+main .learn .learn_main .learn_main_lists .learn_lists_bg {
+  width: 50%;
+  height: 100%;
+  background: url(../img/learn-bg.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .chapter {
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F6F8FC;
+}
+main .chapter .chapter_main {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main .chapter .chapter_main h1 {
+  color: #1B3764;
+  font-family: Cardo;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  position: relative;
+}
+main .chapter .chapter_main h1::after {
+  content: "";
+  width: 55px;
+  height: 3px;
+  background: #FFCA42;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+main .chapter .chapter_main .chapter_main_lists {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+main .chapter .chapter_main .chapter_main_lists .chapter_main_card {
+  width: 550px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background: #FFF;
+  box-shadow: 0px 35px 25px 0px rgba(4, 11, 20, 0.04);
+  padding: 25px 35px;
+}
+main .chapter .chapter_main .chapter_main_lists .chapter_main_card h3 {
+  color: #1B3764;
+  font-family: Cardo;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.48px;
+}
+main .chapter .chapter_main .chapter_main_lists .chapter_main_card p {
+  color: #969AA0;
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 34.2px */
+  letter-spacing: -0.19px;
+  width: 524px;
+}
+main .chapter .chapter_main .chapter_main_lists .chapter_main_card ul {
+  display: flex;
+  list-style: none;
+  gap: 145px;
+  margin-left: 20px;
+  height: 20%;
+}
+main .chapter .chapter_main .chapter_main_lists .chapter_main_card ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+}
+main .chapter .chapter_main .chapter_main_lists .chapter_main_card ul li b {
+  color: #1B3764;
+  font-family: Cardo;
+  font-size: 22px;
+  font-weight: 700;
+  position: relative;
+}
+main .chapter .chapter_main .chapter_main_lists .chapter_main_card ul li b::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #FFCA42;
+  position: absolute;
+  top: 6px;
+  left: -19px;
+}
+main .chapter .chapter_main .chapter_main_lists .chapter_main_card ul li h6 {
+  color: #969AA0;
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.19px;
+  margin-top: 3px;
+}
+main .chapter .chapter_main button {
+  width: 434px;
+  padding: 20px 53px 21px 53px;
+  background: #FFCA42;
+  border: none;
+  color: #1B3764;
+  text-align: center;
+  font-family: Cardo;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.38px;
+  transition: ease-in-out 350ms;
+}
+main .chapter .chapter_main button:hover {
+  background: #1B3764;
+  color: #FFF;
+  cursor: pointer;
+}
+main .chapter .chapter_main .chapter_main_item {
+  color: #969AA0;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 170%;
+}
+main .chapter .chapter_main .chapter_main_item a {
+  color: #1B3764;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  text-decoration-line: underline;
+}
+main .testimonial {
+  width: 100%;
+  height: 950px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .testimonial .testimonial_main {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .testimonial .testimonial_main .testimonial_main_text {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+}
+main .testimonial .testimonial_main .testimonial_main_text h1 {
+  color: #1B3764;
+  font-family: Cardo;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 54px */
+  letter-spacing: -0.9px;
+  position: relative;
+}
+main .testimonial .testimonial_main .testimonial_main_text h1::after {
+  content: "";
+  width: 55px;
+  height: 3px;
+  background: #FFCA42;
+  position: absolute;
+  top: 120px;
+  left: 5px;
+}
+main .testimonial .testimonial_main .testimonial_main_text p {
+  color: #969AA0;
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 34.2px */
+  letter-spacing: -0.19px;
+  width: 418px;
+  position: relative;
+}
+main .testimonial .testimonial_main .testimonial_main_text p::after {
+  content: "(4.8/5)";
+  color: #1B3764;
+  font-family: Cardo;
+  font-size: 22px;
+  font-weight: 700;
+  position: absolute;
+  top: 165px;
+  left: 132px;
+}
+main .testimonial .testimonial_main .testimonial_main_text b {
+  color: #1B3764;
+  font-family: Inter;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: -0.19px;
+}
+main .testimonial .testimonial_main .testimonial_main_list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+main .testimonial .testimonial_main .testimonial_main_list .testimonial_list_card {
+  height: 280px;
+  width: 300px;
+  padding: 15px 31px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #1B3764;
+}
+main .testimonial .testimonial_main .testimonial_main_list .testimonial_list_card h3 {
+  color: #FFF;
+  font-family: Cardo;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.22px;
+}
+main .testimonial .testimonial_main .testimonial_main_list .testimonial_list_card p {
+  color: #B4C7E7;
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 34.2px */
+  letter-spacing: -0.19px;
+  width: 308px;
+}
+main .testimonial .testimonial_main .testimonial_main_list .testimonial_list_card .list_card_profile {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  background: url(../img/Person_one.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .testimonial .testimonial_main .testimonial_main_list .testimonial_list_card .list_card_profile2 {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  background: url(../img/person_two.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .testimonial .testimonial_main .testimonial_main_list .testimonial_list_card .list_card_profile3 {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  background: url(../img/person_three.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .blog {
+  width: 100%;
+  height: 950px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: #F4F8FF;
+}
+main .blog h1 {
+  color: #1B3764;
+  font-family: Cardo;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  position: relative;
+}
+main .blog h1::after {
+  content: "";
+  width: 55px;
+  height: 3px;
+  background: #FFCA42;
+  position: absolute;
+  top: 100px;
+  left: 170px;
+}
+main .blog .blog_main {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main .blog .blog_main .blog_main_list {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+main .blog .blog_main .blog_main_list .blog_list_card {
+  background: #FFF;
+  box-shadow: 0px 35px 25px 0px rgba(4, 11, 20, 0.04);
+  width: 420px;
+  height: 614px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .blog .blog_main .blog_main_list .blog_list_card img {
+  width: 420px;
+  height: 300px;
+}
+main .blog .blog_main .blog_main_list .blog_list_card h2 {
+  color: #1B3764;
+  font-family: Cardo;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: -0.48px;
+  width: 307px;
+  margin-left: 25px;
+}
+main .blog .blog_main .blog_main_list .blog_list_card p {
+  width: 347px;
+  color: #969AA0;
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 34.2px */
+  letter-spacing: -0.19px;
+  margin-left: 25px;
+}
+main .blog .blog_main .blog_main_list .blog_list_card .txt {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  justify-content: space-around;
+  align-items: center;
+  gap: 60px;
+}
+main .blog .blog_main .blog_main_list .blog_list_card .txt a {
+  color: #1B3764;
+  text-align: center;
+  font-family: Cardo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 22.5px */
+  letter-spacing: 0.36px;
+}
+main .blog .blog_main .blog_main_list .blog_list_card .txt h4 {
+  color: #1B3764;
+  text-align: right;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 21.25px */
+}
+
+/*# sourceMappingURL=main.css.map */
